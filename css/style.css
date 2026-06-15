@@ -975,10 +975,17 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   justify-content: center;
   padding: var(--space-md);
   opacity: 0;
+  pointer-events: none;
   transition: opacity 200ms ease;
 }
 
-.modal-overlay.visible { opacity: 1; }
+/* [hidden] reseta o display:flex que sobrescreveria o atributo nativo */
+.modal-overlay[hidden] { display: none; }
+
+.modal-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 .modal {
   background: #fff;
