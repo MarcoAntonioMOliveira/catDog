@@ -27,7 +27,7 @@ const petsData = [
     status: 'disponível',
     description: 'Thor é brincalhão e cheio de energia. Adora crianças e convive bem com outros cães. Já foi vacinado, vermifugado e castrado. Busca uma família com espaço para correr e muita disposição.',
     tags: ['Brincalhão', 'Sociável', 'Vacinado', 'Castrado'],
-    image: 'https://picsum.photos/seed/thor-labrador/480/360',
+    image: 'assets/images/pets/thor.jpg',
     org: 'Instituto Patinhas'
   },
   {
@@ -42,7 +42,7 @@ const petsData = [
     status: 'disponível',
     description: 'Luna é tranquila e carinhosa. Adora colos e se adapta muito bem a apartamentos. Convive bem com outros gatos e não requer muito espaço.',
     tags: ['Tranquila', 'Carinhosa', 'Para apartamento', 'Vacinada'],
-    image: 'https://picsum.photos/seed/luna-siames/480/360',
+    image: 'assets/images/pets/luna.jpg',
     org: 'Lar dos Miados'
   },
   {
@@ -57,7 +57,7 @@ const petsData = [
     status: 'disponível',
     description: 'Bob é calmo, leal e ama uma boa caminhada no parque. Já conhece comandos básicos. Ótimo companheiro para famílias com crianças maiores.',
     tags: ['Calmo', 'Leal', 'Treinado', 'Vacinado'],
-    image: 'https://picsum.photos/seed/bob-srd-dog/480/360',
+    image: 'assets/images/pets/bob.jpg',
     org: 'Instituto Patinhas'
   },
   {
@@ -72,7 +72,7 @@ const petsData = [
     status: 'lar temporário',
     description: 'Mia é independente mas muito afetuosa quando confia em você. Prefere ambientes tranquilos, sem muito barulho ou agitação. Perfeita para pessoas mais calmas.',
     tags: ['Independente', 'Afetuosa', 'Prefere sossego', 'Vacinada'],
-    image: 'https://picsum.photos/seed/mia-persa-cat/480/360',
+    image: 'assets/images/pets/mia.jpg',
     org: 'Lar dos Miados'
   },
   {
@@ -87,7 +87,7 @@ const petsData = [
     status: 'disponível',
     description: 'Rex é um filhote curioso e muito inteligente. Aprende rapidamente e adora explorar. Ideal para quem tem quintal e disposição para treinar.',
     tags: ['Inteligente', 'Curioso', 'Ativo', 'Vacinado'],
-    image: 'https://picsum.photos/seed/rex-pastor-dog/480/360',
+    image: 'assets/images/pets/rex.jpg',
     org: 'Instituto Patinhas'
   },
   {
@@ -102,7 +102,7 @@ const petsData = [
     status: 'disponível',
     description: 'Brisa é madura e tranquila. Ótima escolha para quem busca companhia sem muita agitação. Convive bem com crianças que respeitam seu espaço.',
     tags: ['Madura', 'Tranquila', 'Vacinada', 'Castrada'],
-    image: 'https://picsum.photos/seed/brisa-pelo-curto/480/360',
+    image: 'assets/images/pets/brisa.jpg',
     org: 'Lar dos Miados'
   },
   {
@@ -117,7 +117,7 @@ const petsData = [
     status: 'disponível',
     description: 'Caramelo espera há muito tempo por um lar. É gentil, dócil e adora um passeio tranquilo. Ele merece uma família — e vai retribuir com muita lealdade.',
     tags: ['Gentil', 'Dócil', 'Paciente', 'Vacinado'],
-    image: 'https://picsum.photos/seed/caramelo-vira-lata/480/360',
+    image: 'assets/images/pets/caramelo.jpg',
     org: 'Instituto Patinhas'
   },
   {
@@ -132,7 +132,7 @@ const petsData = [
     status: 'lar temporário',
     description: 'Nala tem pelo longo e olhos expressivos. Adora brincar com bolinhas e observar o mundo pela janela. É muito curiosa e ativa.',
     tags: ['Curiosa', 'Brincalhona', 'Pelo longo', 'Vacinada'],
-    image: 'https://picsum.photos/seed/nala-angora-cat/480/360',
+    image: 'assets/images/pets/nala.jpg',
     org: 'Lar dos Miados'
   }
 ];
