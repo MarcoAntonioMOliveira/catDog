@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Conheça os pets disponíveis para adoção no CatDog. Filtre por espécie, porte e idade e encontre a combinação perfeita para sua família.">
+  <meta name="keywords" content="pets para adoção, cães para adotar, gatos para adotar, adoção animal responsável">
+  <meta name="author" content="CatDog">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Adotar — CatDog">
+  <meta property="og:description" content="Encontre cães e gatos disponíveis para adoção perto de você.">
+  <meta property="og:type" content="website">
+
+  <title>Adotar — CatDog</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container navbar__inner">
+
+      <a href="index.html" class="navbar__logo" aria-label="CatDog — página inicial">
+        <img src="assets/images/logo.svg" alt="CatDog" width="40" height="40">
+        <span class="navbar__wordmark">
+          <span>Cat</span><span class="text-primary">Dog</span>
+        </span>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Navegação principal">
+        <ul class="navbar__links">
+          <li><a href="index.html"   class="nav-link">Início</a></li>
+          <li><a href="adotar.html"  class="nav-link">Adotar</a></li>
+          <li><a href="sobre.html"   class="nav-link">Sobre</a></li>
+          <li><a href="contato.html" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="contato.html" class="btn btn--primary navbar__cta">Fale conosco</a>
+
+      <button
+        class="navbar__toggle"
+        id="navToggle"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ===================== CONTEÚDO PRINCIPAL ===================== -->
+  <main id="main-content">
+
+    <!-- === PAGE HERO === -->
+    <section class="page-hero" aria-labelledby="pageTitle">
+      <div class="container">
+        <h1 class="page-hero__title" id="pageTitle">Pets disponíveis para adoção</h1>
+        <p class="page-hero__subtitle">
+          Cada um deles tem uma história — e espaço no coração esperando por você.
+        </p>
+      </div>
+    </section>
+
+    <!-- === FILTROS + GRID DE PETS === -->
+    <section class="section" aria-labelledby="filterTitle">
+      <div class="container">
+
+        <!-- Barra de filtros: efeito interativo JavaScript #2 -->
+        <div class="filter-bar" role="search" aria-label="Filtrar pets">
+          <h2 id="filterTitle" class="sr-only">Filtrar pets</h2>
+
+          <div class="filter-group">
+            <label for="filterSpecies">Espécie</label>
+            <select id="filterSpecies" name="filterSpecies" aria-label="Filtrar por espécie">
+              <option value="todos">Todos</option>
+              <option value="cão">Cão</option>
+              <option value="gato">Gato</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filterSize">Porte</label>
+            <select id="filterSize" name="filterSize" aria-label="Filtrar por porte">
+              <option value="todos">Todos</option>
+              <option value="pequeno">Pequeno</option>
+              <option value="médio">Médio</option>
+              <option value="grande">Grande</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filterAge">Faixa etária</label>
+            <select id="filterAge" name="filterAge" aria-label="Filtrar por faixa etária">
+              <option value="todos">Todas</option>
+              <option value="filhote">Filhote (até 1 ano)</option>
+              <option value="jovem">Jovem (2–3 anos)</option>
+              <option value="adulto">Adulto (4+ anos)</option>
+            </select>
+          </div>
+
+          <p class="filter-count">
+            <strong id="petsCount">0</strong> pets encontrados
+          </p>
+
+          <button id="clearFilters" class="btn btn--ghost" type="button">
+            Limpar filtros
+          </button>
+        </div>
+
+        <!-- Grid de cards — preenchido dinamicamente pelo JavaScript -->
+        <div class="pets-grid" id="petsGrid" role="list"
+             aria-label="Lista de pets disponíveis">
+          <!-- JS renderiza os cards aqui -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- === CTA === -->
+    <section class="section cta-section" aria-labelledby="ctaTitle">
+      <div class="container">
+        <div style="text-align:center; max-width:520px; margin:0 auto;">
+          <h2 class="cta-section__title" id="ctaTitle">
+            Não encontrou o integrante ideal?
+          </h2>
+          <p class="cta-section__desc">
+            Entre em contato e nossa equipe pode ajudá-lo a encontrar
+            o pet perfeito para sua realidade.
+          </p>
+          <a href="contato.html" class="btn btn--primary btn--lg">Fale conosco</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo-row">
+          <img src="assets/images/logo.svg" alt="CatDog" width="32" height="32">
+          <span class="footer__wordmark">
+            <span>Cat</span><span class="text-primary">Dog</span>
+          </span>
+        </div>
+        <p class="footer__tagline">
+          Adoção responsável para quem adota, para quem cuida
+          e para cada pet que merece um lar.
+        </p>
+      </div>
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <h3 class="footer__nav-title">Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="adotar.html">Adotar</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; 2026 CatDog. Feito com amor pelos pets.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== MODAL DE DETALHES DO PET ===================== -->
+  <div
+    class="modal-overlay"
+    id="petModal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modalPetName"
+    hidden>
+    <div class="modal">
+      <button class="modal__close" id="modalClose" aria-label="Fechar modal">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- jQuery (para contador animado no index — incluído aqui para consistência) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
