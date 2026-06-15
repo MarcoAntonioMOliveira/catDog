@@ -552,12 +552,17 @@ function initContactForm() {
    9. PRÉ-PREENCHIMENTO VIA URL (?pet=NomeDoPet)
    ============================================== */
 function prefillPetFromURL() {
-  const params      = new URLSearchParams(window.location.search);
-  const petName     = params.get('pet');
+  const params       = new URLSearchParams(window.location.search);
+  const petName      = params.get('pet');
   const assuntoField = document.getElementById('assuntoField');
+  const mensagemField = document.getElementById('mensagemField');
 
   if (petName && assuntoField) {
-    assuntoField.value = `Interesse em adotar: ${petName}`;
+    assuntoField.value = 'interesse-adocao';
+  }
+
+  if (petName && mensagemField && !mensagemField.value) {
+    mensagemField.value = `Olá! Tenho interesse em adotar ${petName}. Podem me dar mais informações?`;
   }
 }
 
